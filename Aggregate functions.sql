@@ -1,0 +1,15 @@
+SELECT MIN(replacement_cost), MAX(release_year) FROM film;
+SELECT COUNT(*) FROM film;
+SELECT * FROM film;
+SELECT AVG(length) FROM film;
+SELECT ROUND(AVG(length), 3) FROM film;
+SELECT * FROM film;
+SELECT SUM(replacement_cost) FROM film;
+SELECT MIN(replacement_cost), MAX(release_year) FROM film;
+SELECT * FROM film;
+SELECT MIN(replacement_cost), MIN(rental_duration), MAX(release_year) FROM film;
+SELECT SUM(rental_duration) FROM film;
+SELECT * FROM payment;
+SELECT COUNT(customer_id) FROM payment GROUP BY customer_id;
+select count(*) from payment;
+SELECT customer_id FROM payment GROUP BY customer_id ORDER BY customer_id;

@@ -1,0 +1,11 @@
+SELECT * FROM film;
+SELECT * FROM film WHERE replacement_cost in (10.99, 16.99);
+SELECT COUNT(*) FROM film WHERE replacement_cost in (10.99, 16.99);
+SELECT DISTINCT(replacement_cost) FROM film;
+SELECT count(DISTINCT(replacement_cost)) FROM film;
+SELECT DISTINCT(replacement_cost) FROM film ORDER BY replacement_cost DESC LIMIT 7;
+SELECT COUNT(*) FROM customer WHERE first_name = 'John';
+SELECT COUNT(*) FROM customer WHERE first_name IN ('John', 'James');
+SELECT * FROM customer WHERE first_name NOT LIKE '%o_' AND last_name LIKE 'G%';
+SELECT * FROM customer WHERE first_name ILIKE '%ER%' ORDER BY last_name;
+SELECT * FROM payment;

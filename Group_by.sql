@@ -1,0 +1,11 @@
+SELECT * FROM payment;
+SELECT customer_id, staff_id, SUM(amount) FROM payment GROUP BY staff_id, customer_id ORDER BY staff_id DESC;
+SELECT DATE(payment_date), SUM(amount) FROM payment GROUP BY DATE(payment_date) ORDER BY SUM(amount) DESC;
+SELECT * FROM payment;
+SELECT DISTINCT staff_id FROM payment;
+SELECT staff_id, COUNT(amount) FROM payment GROUP BY staff_id ORDER BY COUNT(amount) DESC;
+SELECT * FROM film;
+SELECT rating, AVG(replacement_cost) FROM film GROUP BY rating ORDER BY AVG(replacement_cost) DESC;
+SELECT * FROM customer;
+SELECT * FROM payment;
+SELECT customer_id, SUM(amount) FROM payment GROUP BY customer_id ORDER BY SUM(amount) DESC LIMIT 5;
